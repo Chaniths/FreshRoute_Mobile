@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "FreshRoute (Dev Skeleton)",
+    "slug": "freshroute-mobile-dev",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.freshroute.mobile.dev",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "FreshRoute needs your location for delivery tracking.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "FreshRoute needs your location for delivery tracking."
+      }
+    },
+    "android": {
+      "package": "com.freshroute.mobile.dev",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "CAMERA",
+        "NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow FreshRoute to use your location for delivery tracking."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#16a34a"
+        }
+      ],
+      "expo-secure-store"
+    ]
+  }
+}
